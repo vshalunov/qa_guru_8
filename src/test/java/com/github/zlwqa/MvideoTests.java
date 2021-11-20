@@ -4,6 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -55,5 +56,16 @@ public class MvideoTests extends TestBase {
         $("[class='button button--with-icon ng-star-inserted']").click();
         $$(".left-menu__item-text").find(text(itemSideMenuInCatalog)).click();
         $$("a.c-list-of-links__item").shouldHave(texts(valuesOfCategory));
+    }
+
+    @EnumSource(NavigatePanel.class)
+    @Tag("Blocker")
+    @Tag("High")
+    @Tag("Web")
+    @DisplayName("Пункты меню неавторизованного пользователя")
+    @ParameterizedTest(name = "Отображение пукнта меню {0}")
+    void displayAnonymousNavigatePanelItemsTests(NavigatePanel navigatePanel) {
+        open(MVIDEO_URL);
+        $(".nav-tabs").shouldHave(text(navigatePanel.getProfileMenu()));
     }
 }    

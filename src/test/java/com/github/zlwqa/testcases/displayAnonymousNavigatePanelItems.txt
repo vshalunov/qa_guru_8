@@ -1,0 +1,88 @@
+Test Suite #4: Пункты меню неавторизованного пользователя
+
+    ==============================================
+
+    Test Case #1
+        Title: Отображение пункта меню "Статус заказа"
+
+        Severity: Blocker
+        Priority: High
+        Tags: Web
+
+        Preconditions: Пользователь, который не авторизован в системе Мвидео
+
+        Steps to reproduce:
+        1. Открыть страницу https://www.mvideo.ru/
+
+        Expected Result:
+        Отображается пункт "Статус заказа"
+
+    ==============================================
+
+    Test Case #2
+        Title: Отображение пункта меню "Войти"
+
+        Severity: Blocker
+        Priority: High
+        Tags: Web
+
+        Preconditions: Пользователь, который не авторизован в системе Мвидео
+
+        Steps to reproduce:
+        1. Открыть страницу https://www.mvideo.ru/
+
+        Expected Result:
+        Отображается пункт "Войти"
+
+    ==============================================
+
+    Test Case #3
+        Title: Отображение пункта меню "Сравнение"
+
+        Severity: Blocker
+        Priority: High
+        Tags: Web
+
+        Preconditions: Пользователь, который не авторизован в системе Мвидео
+
+        Steps to reproduce:
+        1. Открыть страницу https://www.mvideo.ru/
+
+        Expected Result:
+        Отображается пункт "Сравнение"
+
+    ==============================================
+
+    Test Case #4
+        Title: Отображение пункта меню "Избранное"
+
+        Severity: Blocker
+        Priority: High
+        Tags: Web
+
+        Preconditions: Пользователь, который не авторизован в системе Мвидео
+
+        Steps to reproduce:
+        1. Открыть страницу https://www.mvideo.ru/
+
+        Expected Result:
+        Отображается пункт "Избранное"
+
+    ==============================================
+
+    Test Case #5
+        Title: Отображение пункта меню "Корзина"
+
+        Severity: Blocker
+        Priority: High
+        Tags: Web
+
+        Preconditions: Пользователь, который не авторизован в системе Мвидео
+
+        Steps to reproduce:
+        1. Открыть страницу https://www.mvideo.ru/
+
+        Expected Result:
+        Отображается пункт "Корзина"
+
+    ==============================================
