@@ -17,7 +17,8 @@ import static com.github.zlwqa.TestData.MVIDEO_URL;
 
 public class MvideoTests extends TestBase {
 
-    @ValueSource(strings = {"беспроводной контроллер playstation 5 dualsense rainbo ice banana", "воздухоувлажнитель vitek vt-2338"})
+    @ValueSource(strings = {"беспроводной контроллер playstation 5 dualsense rainbo ice banana",
+            "воздухоувлажнитель vitek vt-2338"})
     @Tag("Critical")
     @Tag("High")
     @Tag("Web")
@@ -51,7 +52,8 @@ public class MvideoTests extends TestBase {
     @Tag("Web")
     @DisplayName("Обзор по категориям на странице основной категории")
     @ParameterizedTest(name = "Отображение категорий {1} в обзоре по категориям на странице {0}")
-    void displayValuesOfReviewsByCategoryOnMainCategoryPageTests(String itemSideMenuInCatalog, List<String> valuesOfCategory) {
+    void displayValuesOfReviewsByCategoryOnMainCategoryPageTests(String itemSideMenuInCatalog,
+                                                                 List<String> valuesOfCategory) {
         open(MVIDEO_URL);
         $("[class='button button--with-icon ng-star-inserted']").click();
         $$(".left-menu__item-text").find(text(itemSideMenuInCatalog)).click();
