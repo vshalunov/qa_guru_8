@@ -7,7 +7,7 @@ public enum NavigatePanel {
     FAVORITES("Избранное"),
     CART("Корзина");
 
-    private String navigatePanel;
+    private final String navigatePanel;
 
     NavigatePanel(String navigatePanel) {
         this.navigatePanel = navigatePanel;
