@@ -45,8 +45,8 @@ public class MvideoTests extends TestBase {
     }
 
     @MethodSource("com.github.zlwqa.ReviewsByCategory#displayValuesOfReviewsByCategoryOnMainCategoryPageTests")
-    @Tag("Critical")
-    @Tag("High")
+    @Tag("Minor")
+    @Tag("Medium")
     @Tag("Web")
     @DisplayName("Обзор по категориям на странице основной категории")
     @ParameterizedTest(name = "Отображение категорий {1} в обзоре по категориям на странице {0}")
