@@ -1,0 +1,39 @@
+Test Suite #1: Результаты поиска
+
+    ==============================================
+
+    Test Case #1
+        Title: Отображение товара "беспроводной контроллер playstation 5 dualsense rainbo ice banana" в результатах поиска
+
+        Severity: Critical
+        Priority: High
+        Tags: Web
+
+        Preconditions: Открыта страница https://www.mvideo.ru/
+
+        Steps to reproduce:
+        1. В поле поиска ввести значение "беспроводной контроллер playstation 5 dualsense rainbo ice banana"
+        2. Нажать на клавишу Enter
+
+        Expected Result:
+        В результате поиска отображается товар с названием "беспроводной контроллер playstation 5 dualsense rainbo ice banana"
+
+    ==============================================
+
+    Test Case #2
+        Title: Отображение товара "воздухоувлажнитель vitek vt-2338" в результатах поиска
+
+        Severity: Critical
+        Priority: High
+        Tags: Web
+
+        Preconditions: Открыта страница https://www.mvideo.ru/
+
+        Steps to reproduce:
+        1. В поле поиска ввести значение "воздухоувлажнитель vitek vt-2338"
+        2. Нажать на клавишу Enter
+
+        Expected Result:
+        В результате поиска отображается товар с названием "воздухоувлажнитель vitek vt-2338"
+
+    ==============================================
